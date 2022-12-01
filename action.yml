@@ -1,0 +1,11 @@
+name: 'SSH连接GitHub虚拟机'
+author: 'itwuge'
+description: '通过SSH连接到GitHub Actions VM进行交互式调试'
+runs:
+  using: "composite"
+  steps: 
+    - run: $GITHUB_ACTION_PATH/tmate2actions.sh
+      shell: bash
+branding:
+  icon: 'terminal'
+  color: 'gray-dark'
