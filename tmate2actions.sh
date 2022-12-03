@@ -36,7 +36,7 @@ fi
 [[ -e ~/.ssh/id_rsa ]] || ssh-keygen -t rsa -f ~/.ssh/id_rsa -q -N ""
 
 # 监控 tmate 运行状态
-echo -e "${INFO}     ${Red_color}tmate 准备中请等待........"
+echo -e "${INFO}       ${Red_color}tmate 准备中请等待........"
 tmate -S ${SOCK} new-session -d
 tmate -S ${SOCK} wait tmate-ready
 
