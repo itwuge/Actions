@@ -56,7 +56,7 @@ while ((${TIMES_COUNT:=1} <= ${TIMES_TOTAL:=3})); do
         CONTROL_TIME=$((${CONTROL_TIME} - 1))
     done
     echo "-----------------------------------------------------------"
-    echo -e "${Red_color}           复制并粘贴以下内容到终端或浏览器中${Default_color}"
+    echo -e "${Red_color}            复制并粘贴以下内容到终端或浏览器中${Default_color}"
     echo -e "${Red_color}       使用 ${Green_color}           Ctrl+C             ${Red_color}连接到此会话${Default_color}"
     echo -e "${Red_color}       使用 ${Green_color}cd openwrt && make menuconfig ${Red_color}进入定制页面${Default_color}"
     echo -e "${Red_color}SSH 终端连接: ${Green_color}${T_SSH}${Default_color}"
