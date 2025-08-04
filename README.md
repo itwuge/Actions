@@ -178,6 +178,17 @@ steps:
   - uses: actions/setup-node@v1.2    # 指定一个 tag
   - uses: actions/setup-node@master  # 指定一个分支
 ```
+# Action Releses Token设置
+
+```sh
+# 头像 --> Settings --> Developer Settings --> Personal access tokens -->   Tokens (classic) --> Generate new token --> Generate new token (classic)
+# Expiration --> 设置为 No expiration 
+# 填写备注 --> 赋予权限 --> 提交 --> 记住 ghp_开头的内容
+# 把 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 填写到 
+# 项目分支中 --> Settings --> Secrets and wariables --> Actions --> Secrets --> New repository secret 
+```
+
+
 
 一般来说 `action` 的开发者会说明建议使用的版本。
 
